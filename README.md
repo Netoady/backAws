@@ -43,3 +43,11 @@ aws.secret-key=
 
 spring.servlet.multipart.max-file-size=500MB
 spring.servlet.multipart.max-request-size=500MB
+```
+
+2. Execute a operação com Maven:
+
+```bash
+./mvnw spring-boot:run
+```
+(Se aws.access-key e aws.secret-key ficarem vazios, o S3Config utiliza DefaultCredentialsProvider do AWS SDK).
